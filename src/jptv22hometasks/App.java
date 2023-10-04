@@ -24,6 +24,9 @@ public class App {
             System.out.println("Выберите номер задачи из списка");
             System.out.println("0. Выход из программы");
             System.out.println("1. Конвертор температуры");
+            System.out.println("2. Парсер чисел");
+            System.out.println("3. Календарь");
+            System.out.println("4. Тест");
             System.out.println("№ задачи: ");
             int task = this.scanner.nextInt();scanner.nextLine();
             switch (task) {
