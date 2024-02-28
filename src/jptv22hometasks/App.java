@@ -38,6 +38,21 @@ public class App {
                     TemperatureConverter temperatureConvenrter = new TemperatureConverter(scanner);
                     temperatureConvenrter.doConvert();
                     break;
+                case 2:
+                    System.out.println("Выбрана задача 2");
+                    NumberParser numberParser = new NumberParser(scanner);
+                    numberParser.doParser();
+                    break;
+                case 3:
+                    System.out.println("Выбрана задача 3");
+                    Calendar calendar = new Calendar(scanner);
+                    calendar.getYearName();
+                    break;
+                case 4:
+                    System.out.println("Выбрана задача 4");
+                    Test test = new Test(scanner);
+                    test.doTest();
+                    break;
                 default:
                     System.out.println("Выбирайте номер из списка задач!");
                     break;

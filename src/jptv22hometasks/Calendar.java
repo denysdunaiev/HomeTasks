@@ -22,11 +22,11 @@ public class Calendar {
         }
 
         String[] colors = {"зеленый", "красный", "желтый", "белый", "черный"};
-        String[] animals = {"крысы", "коровы", "тигра", "зайца", "дракона", "змеи", "лошади", "овцы", "обезьяны", "курицы", "собаки", "свиньи"};
+        String[] animals = {"крыса", "корова", "тигр", "заяц", "дракон", "змея", "лошадь", "овца", "обезьяна", "курица", "собака", "свинья"};
 
         int subCycle = (year - 1984) % 60;
 
-        int colorIndex = subCycle / 12;
+        int colorIndex = ((year - 1984) / 2) % 5;
         int animalIndex = subCycle % 12;
 
         String yearName = colors[colorIndex] + " " + animals[animalIndex];
